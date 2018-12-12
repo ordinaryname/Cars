@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
+import Header from './Header';
 import Error from './Error';
 import Maker from './Maker';
 
@@ -28,9 +28,7 @@ class Manufacturer extends Component {
     const { params } = this.props.match;
     return(
       <div>
-        <div className="header">
-          <Link to="/"><button className="homeButton">Seaweed</button></Link>
-        </div>
+        <Header/>
         {this.state.manufacturers.includes(params.manufacturer)?(<Maker maker={params.manufacturer}/>):(<Error />)}
       </div>
     );
