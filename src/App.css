@@ -204,6 +204,33 @@
   padding: 0;
 }
 
+.languagesContainer {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0px;
+  background-color: #efefef;
+}
+
+.listOLanguages {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.language {
+  display: inline;
+}
+
+.languageText {
+  display: inline;
+  padding: 0;
+  margin: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #cccccc;
+  letter-spacing: 10px;
+}
+
 .footer {
   width: 100%;
   background-color: #efefef;
