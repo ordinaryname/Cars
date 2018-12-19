@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+
+import starImage from './images/star_border.png';
+
 class Maker extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +17,7 @@ class Maker extends Component {
       .then(results => {return results.json();})
       .then(data => {
         let cars = Object.values(data).map((company) => {
-          return(<div className="vehicle"><p className="vehicleText">{company}</p></div>)
+          return(<div className="vehicle"><p className="vehicleText">{company}</p><div className="star"></div></div>)
         })
         this.setState({cars: cars});
       })
