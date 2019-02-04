@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Manufacturers from './Manufacturers';
 import { Link } from "react-router-dom";
 
 import accountIcon from './images/account_box.png';
@@ -78,7 +77,8 @@ class Header extends Component {
             <img src={accountIcon} className="accountIcon" alt="Account Icon" onClick={this.showAccountMenu}/>
             {this.state.showAccountMenu?(
               <div className="accountMenu" ref={(element) => {this.dropdownMenu1 = element;}}>
-                <button className="manufacturer">Account</button>
+                <button className="manufacturer">Guest</button>
+                <Link to="/account"><button className="manufacturer">Account</button></Link>
                 <button className="manufacturer">Log Out</button>
               </div>
             ):(null)}

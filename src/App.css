@@ -247,7 +247,7 @@
   letter-spacing: 10px;
 }
 
-.star {
+.unstarred {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -259,8 +259,58 @@
   background: url(./Components/images/star_border.png) no-repeat center center/contain;
 }
 
-.star:hover {
-  background-image: url(./Components/images/star.png);
+.unstarred:hover {
+  /*background-image: url(./Components/images/star.png);*/
+  cursor: pointer;
+}
+
+.starred {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 5%;
+  bottom: 10%;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  filter: contrast(0) sepia(100%) hue-rotate(360deg) brightness(1.2);
+  background: url(./Components/images/star.png) no-repeat center center/contain;
+}
+
+.starred:hover {
+  /*background-image: url(./Components/images/star_border.png);*/
+  cursor: pointer;
+}
+
+.accountBody {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.userImage {
+  width: 18%;
+}
+
+.usernameText {
+  font-size: 50px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.starred_vehicle {
+
+}
+
+.starred_vehicles {
+
+}
+
+.starred_vehicleTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #555555;
 }
 
 .footer {
